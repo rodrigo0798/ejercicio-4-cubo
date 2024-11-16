@@ -1,0 +1,522 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9da1dafb-b906-4336-921f-9f3c7d2f2b84" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Covid 2020</ID>
+  <Name>Covid 2020</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="8" scrolltop="-1375" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="99" x="9038" y="11261" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Covid_2020" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="8657" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d121000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Covid_2020" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>8</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1375</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>99</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="882f2ac0-b26e-4a18-80cd-4aaa90c0042d">
+    <DataSourceViewID>Report SV</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="c369c082-aae6-4bec-a63b-0fad190af729">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="ca297823-0eca-4684-abc4-8d893ca110de">
+      <ID>Country Region Code</ID>
+      <Name>Country Region Code</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5356cb7a-35be-470e-8416-9163e7a0f2b0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="518f2301-b00f-4ce3-9f7c-1ccd42408f47">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>country_region_code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2411bc1c-3093-4671-9d41-2ce7268206ac">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b1defc8-bf96-4099-80de-1cca977915ad">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>country_region</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4560a162-be7d-4058-a2b0-063d0a4e5378">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="384b2a90-71e4-41b9-94d9-716e64eb79cf">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>sub_region_1</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="35b1174d-b4e2-4b4b-9e71-3f908a03f237">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa0581d1-2062-457d-94cd-057efdc5e746">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>sub_region_2</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="87faedc6-8fd7-4b4c-b688-d6cd812f3e71">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49d20c15-0592-4046-be9c-323b1ee2c869">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>metro_area</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="29142633-39e1-4ee6-b7d7-6aec22f54b26">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="978edd70-27cd-40be-aff5-54d4ea65fc35">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>iso_3166_2_code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="df0615be-6d96-4b88-844c-99c4659f006d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="583c23fa-e655-4469-9ada-2cb21726c2d9">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>census_fips_code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="38c07b03-d93f-47c5-8288-4543137b4366">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2cdbf728-8cc1-4e99-aedc-b0b1f26134e2">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>place_id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="098cb84d-6694-43ae-a626-aed38f31a5f5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f70caa52-a62b-4f00-b7ab-e03eec5bc9f3">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>date</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d97f3b3e-fd1f-40dc-93af-3475a39a9c35">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab2d9857-0fbb-42cc-8f68-a7d9fa7ff1ef">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>retail_and_recreation_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="edbaead5-c08b-47db-bb3d-1c399f12a958">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f0da314-44b8-462e-a801-9846a90e48b7">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>grocery_and_pharmacy_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c3146dfe-7060-49cc-8de9-ae21eec38680">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="deeb610f-eb37-4b49-9481-41167d0ff10d">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>parks_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="11888f08-7295-4431-9465-fbfee593e244">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c54883ba-ea69-49b7-894b-f9afde2f3947">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>transit_stations_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="1d78f7f3-3aa0-4b43-a512-99c1e83637ad">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de4916a6-5916-4adf-bcd1-f94aea7fb5a7">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>workplaces_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6372d56c-7bbb-4e57-a980-6a702f0ea758">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ef8a329-62d2-4455-8bbe-7dc1a7cae760">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>residential_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="be0e7176-079c-4123-a6c7-856dacaf2dd4">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f5e193c7-e7f1-4070-98dd-7c15ba8ff9cf">
+          <TableID>dbo_Covid_2020</TableID>
+          <ColumnID>country_region_code</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6fa494c1-12c4-41fc-a3a2-e2aac41700b2">
+          <AttributeID>Country Region Code 1</AttributeID>
+          <Name>Country Region Code 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c56def86-55c7-41b6-a2e3-31fffcd108f3">
+          <AttributeID>Country Region</AttributeID>
+          <Name>Country Region</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e92f7c60-ae68-4389-b194-eafbf37aa5dd">
+          <AttributeID>Sub Region 1</AttributeID>
+          <Name>Sub Region 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ade45bb7-e742-4ae1-986c-511ff44c07ef">
+          <AttributeID>Sub Region 2</AttributeID>
+          <Name>Sub Region 2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="16e69f03-6810-4978-ab3d-e1f32f43bdfd">
+          <AttributeID>Metro Area</AttributeID>
+          <Name>Metro Area</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eea48222-1736-46f5-bb2f-3adbf006cf4c">
+          <AttributeID>Iso 3166 2 Code</AttributeID>
+          <Name>Iso 3166 2 Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="46ae5d89-986f-4c2a-92f8-0dd949afe7ae">
+          <AttributeID>Census Fips Code</AttributeID>
+          <Name>Census Fips Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2f5b8f46-e73f-4cdf-bd49-a8f3fc96554b">
+          <AttributeID>Place Id</AttributeID>
+          <Name>Place Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80a58e8c-fa6e-4778-b940-e2cb8cf3fbad">
+          <AttributeID>Retail And Recreation Percent Change From Baseline</AttributeID>
+          <Name>Retail And Recreation Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="83322ece-82d2-4f16-b686-723e3877ff51">
+          <AttributeID>Grocery And Pharmacy Percent Change From Baseline</AttributeID>
+          <Name>Grocery And Pharmacy Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b58af55-cb28-4f07-926e-7d7796f494fd">
+          <AttributeID>Parks Percent Change From Baseline</AttributeID>
+          <Name>Parks Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ae3ce6fc-f35f-407b-bb39-61511dff331d">
+          <AttributeID>Transit Stations Percent Change From Baseline</AttributeID>
+          <Name>Transit Stations Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d3fc19e2-c241-46e3-9287-6b1f67138c76">
+          <AttributeID>Workplaces Percent Change From Baseline</AttributeID>
+          <Name>Workplaces Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="af528fef-09ed-4339-a064-fb0a61939a82">
+          <AttributeID>Residential Percent Change From Baseline</AttributeID>
+          <Name>Residential Percent Change From Baseline</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c6274b0c-22f7-4a62-ad84-b7df0ec1b314">
+          <AttributeID>Date</AttributeID>
+          <Name>Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="76278b2f-3359-4974-bff7-43c967356e96">
+      <ID>Country Region Code 1</ID>
+      <Name>Country Region Code 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2aa9e20e-8dcc-4fac-a4af-cd42857ab267">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="54d138d7-d06a-4be8-800c-15675bbe7f6e">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>country_region_code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="27d4dee2-0b55-4dd0-84c4-f36be4e3964b">
+      <ID>Country Region</ID>
+      <Name>Country Region</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8882edf0-da19-4062-8b32-ad18d70f7fa6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9127e646-5b71-4a11-8bdc-186c718191b2">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>country_region</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9fd5e037-62e5-4ed5-bcaf-384b04b11ebe">
+      <ID>Sub Region 1</ID>
+      <Name>Sub Region 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3f36c201-6eaa-46d4-b53d-1096d2c15d78">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04e748e5-33bf-46ed-a208-b6c8f95db88e">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>sub_region_1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d3f966b7-a55a-4271-91f4-1ceb406e2880">
+      <ID>Sub Region 2</ID>
+      <Name>Sub Region 2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8bf7b986-78d6-4968-84ef-a6e3610168a4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a53e58ea-bd2c-488e-838b-d676f689de92">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>sub_region_2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e998d0e7-d4cd-493c-b56e-09e2bda53b3a">
+      <ID>Metro Area</ID>
+      <Name>Metro Area</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f4c6930-7545-4412-9790-1012d61404f3">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4230a2d-87a9-4eed-a431-88deed1e4e95">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>metro_area</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b88b6f6f-29da-42e5-aaa3-16476bc3306e">
+      <ID>Iso 3166 2 Code</ID>
+      <Name>Iso 3166 2 Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5b6f4901-6d2e-49a2-a579-dd805c0517fe">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8183f903-c466-48cd-b541-09ab7bac76b2">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>iso_3166_2_code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="be9b8d94-890c-4996-95b5-ff2a8ec323de">
+      <ID>Census Fips Code</ID>
+      <Name>Census Fips Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7af77a5d-3ca9-4c07-8fa3-9d4d751bd1a5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d65cecf-32ad-42e1-9f2f-8d9b7ea20c64">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>census_fips_code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7924cec3-02ad-4c59-98f9-8b0abee543af">
+      <ID>Place Id</ID>
+      <Name>Place Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="536a1129-1821-4266-9a22-b78cc87a9981">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7157152b-9c8e-456d-a727-03332e01522e">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>place_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fd0c3d1c-c37c-413f-82a2-88c26e7b1c16">
+      <ID>Retail And Recreation Percent Change From Baseline</ID>
+      <Name>Retail And Recreation Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8d3bd6d2-19c7-40ca-ae13-25f126d249ff">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d4f8a441-e4a4-430f-bf89-90992f725e08">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>retail_and_recreation_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c21e0c1e-226b-4ac0-bf8d-e6d0f4711a5d">
+      <ID>Grocery And Pharmacy Percent Change From Baseline</ID>
+      <Name>Grocery And Pharmacy Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f3504eae-d9b8-485a-916a-53cc8dd93145">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eb32e701-b1f4-452e-9c89-f98351a4a065">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>grocery_and_pharmacy_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e7cc3f9-be1d-4f92-b355-fb961d1f55cf">
+      <ID>Parks Percent Change From Baseline</ID>
+      <Name>Parks Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="225aa17b-f6cb-4234-bbd4-96d983e2af96">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="90b1fe62-23a5-452d-b974-ea2780807669">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>parks_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="32659bf6-30e3-4a00-b7bb-1be1d4f6c899">
+      <ID>Transit Stations Percent Change From Baseline</ID>
+      <Name>Transit Stations Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="48b8ef7d-a5ce-4b8a-981f-02a9cbffb194">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c18c606-fd7c-4dd7-8973-b52e7112a65f">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>transit_stations_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="41afb116-0a39-4f79-886a-329186233b3a">
+      <ID>Workplaces Percent Change From Baseline</ID>
+      <Name>Workplaces Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="377f6985-304d-40a8-8637-89f85c4122de">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63c1cc90-bf65-4c12-a2a9-e1cb8605efbd">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>workplaces_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f1356c3e-5484-4cb2-ad59-ba1651cd323c">
+      <ID>Residential Percent Change From Baseline</ID>
+      <Name>Residential Percent Change From Baseline</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b1ee511e-9661-468c-9d69-99b544e073a2">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="485c658e-d78a-4182-9613-06d4d25bf42a">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>residential_percent_change_from_baseline</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7e2315c7-f3b2-4941-96dd-d41a7d301462">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="29459972-33da-4b1f-a4cd-77272d926cb5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8117bd90-5ab6-420c-b5a3-65168769e5dd">
+            <TableID>dbo_Covid_2020</TableID>
+            <ColumnID>date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
